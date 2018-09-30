@@ -161,7 +161,7 @@
 		block = '\
 			<label class="label-radiocharm ' + selected + '" id="label-radiocharm-' + input_id + '">\
 				<em class="fa fa-fw fa-circle-o inactive"></em><em class="fa fa-fw fa-' + input_icon + ' active"></em> ' + input_label + '\
-				<input class="' + input_class + '" id="radiocharm-' + input_id + '" name="' + input_name + '" type="radio" value="' + input_value + '" />\
+				<input ' + (selected === 'active' ? 'checked' : '') + '  class="' + input_class + '" id="radiocharm-' + input_id + '" name="' + input_name + '" type="radio" value="' + input_value + '" />\
 				' + style + '\
 			</label>\
 		';
